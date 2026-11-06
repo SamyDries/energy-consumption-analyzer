@@ -3,6 +3,12 @@
 
 An end-to-end data analysis project focused on household electricity consumption. The project combines Python-based data processing, statistical analysis, scientific visualizations, and an interactive web dashboard.
 
+## Live Demo
+
+Explore the interactive dashboard:
+
+[**Open Energy Consumption Analyzer →**](https://samydries.github.io/energy-consumption-analyzer/)
+
 ## Project Overview
 
 This project analyzes real-world electricity consumption data collected from a household in Sceaux, France, between December 2006 and November 2010.
