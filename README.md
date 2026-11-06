@@ -152,8 +152,8 @@ HTML, CSS, JavaScript and Chart.js.
 ### 1. Clone the repository
 
 ```bash
-git clone YOUR_GITHUB_REPOSITORY_URL
-cd 01-Energy-Consumption-Analyzer
+git clone https://github.com/SamyDries/energy-consumption-analyzer.git
+cd energy-consumption-analyzer
 ```
 
 ### 2. Create a virtual environment
@@ -213,14 +213,12 @@ Open:
 http://127.0.0.1:8000/
 ```
 
-## Project Status
 
-**Completed:** Data exploration, quality auditing, preprocessing, daily/monthly/hourly analysis, Matplotlib visualizations, and interactive dashboard.
 
-**Next steps:** GitHub publication and Netlify deployment.
+
 
 ---
 
 **Author:** Samy Dries  
 **Field:** Automation and Industrial Computing  
-**Project:** 90 Projects Zero to Hero
+**Project:** 1/90 Projects Zero to Hero
