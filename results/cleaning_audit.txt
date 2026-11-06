@@ -1,0 +1,43 @@
+
+==================================================
+ENERGY CONSUMPTION ANALYZER
+DATA QUALITY AUDIT
+==================================================
+
+1. DATASET INFORMATION
+
+Rows: 2,075,259
+Columns: 10
+Memory: 354.16 MB
+
+2. DATETIME VALIDATION
+
+Invalid timestamps: 0
+Duplicate timestamps: 0
+Irregular time intervals: 0
+
+3. MISSING VALUES BY COLUMN
+
+Global_active_power      25979
+Global_reactive_power    25979
+Voltage                  25979
+Global_intensity         25979
+Sub_metering_1           25979
+Sub_metering_2           25979
+Sub_metering_3           25979
+
+Total rows with all 7 measurements missing: 25,979
+
+4. CONSECUTIVE MISSING PERIODS
+
+Number of missing periods: 71
+Longest missing period: 7,226 minutes
+
+5. DUPLICATE RECORDS
+
+Exact duplicate rows: 0
+
+==================================================
+AUDIT COMPLETED
+Original dataset was not modified.
+==================================================

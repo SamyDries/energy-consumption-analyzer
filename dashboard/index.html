@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Energy Consumption Analyzer</title>
+
+    <meta
+        name="description"
+        content="An interactive dashboard for household electricity consumption analysis."
+    >
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Chart.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header-content">
+            <div>
+                <p class="eyebrow">DATA ANALYTICS PROJECT</p>
+                <h1>Energy Consumption Analyzer</h1>
+                <p class="subtitle">
+                    Household electricity consumption — 2006 to 2010
+                </p>
+            </div>
+
+            <div class="status">
+                <span class="status-dot"></span>
+                <span id="data-status">Loading data...</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <!-- KPI CARDS -->
+        <section class="kpi-grid">
+
+            <article class="kpi-card">
+                <p class="kpi-label">Total Energy Consumption</p>
+                <h2 id="total-energy">--</h2>
+                <p class="kpi-description">MWh · Reliable days only</p>
+            </article>
+
+            <article class="kpi-card">
+                <p class="kpi-label">Average Daily Consumption</p>
+                <h2 id="average-daily">--</h2>
+                <p class="kpi-description">kWh per day</p>
+            </article>
+
+            <article class="kpi-card">
+                <p class="kpi-label">Average Power</p>
+                <h2 id="average-power">--</h2>
+                <p class="kpi-description">kW</p>
+            </article>
+
+            <article class="kpi-card">
+                <p class="kpi-label">Data Coverage</p>
+                <h2 id="data-coverage">--</h2>
+                <p class="kpi-description">Measurement availability</p>
+            </article>
+
+        </section>
+
+        <!-- DAILY ANALYSIS -->
+        <section class="chart-section">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">DAILY ANALYSIS</p>
+                    <h2>Daily Energy Consumption</h2>
+                </div>
+                <span class="unit-label">kWh / day</span>
+            </div>
+
+            <div class="chart-card">
+                <canvas id="dailyChart"></canvas>
+            </div>
+        </section>
+
+        <!-- MONTHLY ANALYSIS -->
+        <section class="chart-section">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">MONTHLY ANALYSIS</p>
+                    <h2>Monthly Energy Consumption</h2>
+                </div>
+                <span class="unit-label">kWh / month</span>
+            </div>
+
+            <div class="chart-card">
+                <canvas id="monthlyChart"></canvas>
+            </div>
+        </section>
+
+        <!-- HOURLY ANALYSIS -->
+        <section class="chart-section">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">HOURLY ANALYSIS</p>
+                    <h2>Average Daily Consumption by Hour</h2>
+                </div>
+                <span class="unit-label">kWh / hour</span>
+            </div>
+
+            <div class="chart-card">
+                <canvas id="hourlyChart"></canvas>
+            </div>
+        </section>
+
+        <footer>
+            <p>Energy Consumption Analyzer · Data Science Project</p>
+            <p>Dataset: UCI Machine Learning Repository</p>
+        </footer>
+
+    </main>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
